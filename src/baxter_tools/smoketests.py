@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 # Copyright (c) 2013-2015, Rethink Robotics
 # All rights reserved.
@@ -229,7 +229,7 @@ class Head(SmokeTest):
             head.set_pan(-1.0, 0.05)
             head.set_pan(0.0, 0.05)
             print "Test: Nod Head"
-            for _ in xrange(3):
+            for _ in range(3):
                 head.command_nod()
             print "Test: Display Image on Screen - 5 seconds"
             image_path = (self._rp.get_path('baxter_tools') +
